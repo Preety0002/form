@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="left">
+      <form action="/create" method="post">
+        <input type="text" name="file" placeholder="enter filename">
+      </form>
+      <ul>
+       <% read.forEach(function(show,index){%>
+          <li>
+            <a href="/show/<%=show%>"><%=show%></a>
+            <a href="/delete/<%=show%>">❌</a>
+          </li>
+       <% })%>
+
+      </ul>
+    </div>
+    <div class="right">
+      <form action="/update/<%=file%>" method="post">
+        <textarea name="store" cols="65" rows="25"><%=store%> </textarea>
+        <br><br>
+        <button>save</button>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+}
+.left{
+  width: 30%;
+  height: 100%;
+  
+  background-color:black;
+}
+a{
+  font-size: 30px;
+  color:whitesmoke;
+}
+.right{
+  width: 60%;
+  height: 100%;
+  background-image: url(https://previews.123rf.com/images/takepicsforfun/takepicsforfun1708/takepicsforfun170800040/84940241-desktop-computer-without-keyboard-isolated-on-white-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: black; */
+  /* color: whitesmoke; */
+  position: relative;
+}
+textarea{
+  margin-top: 11%;
+  margin-left: 15%;
+  border: none;
+  background-color: black;
+  color: white;
+}
+button{
+  border-radius: 8vw;
+  padding: 10px 15px;
+  color:black;
+  font-size: 30px;
+  border-color: black;
+  margin-left: 65%;
+top: 50%;
+  position: absolute;
+}
+input{
+  padding: 10px 15px;
+  border-radius: 5vw;
+  margin-top: 10%;
+  
+}
